@@ -72572,7 +72572,7 @@ $S:162}
 A.ad1.prototype={
 $0(){var s=this.b
 if(s!==-1)this.a.f.ra(0,B.bO,s)
-else B.lh.CI(window,"/assets/PYRAWhitepaper.pdf","text")},
+else B.lh.CI(window,"/assets/assets/PYRAWhitepaper.pdf","text")},
 $S:0}
 A.acU.prototype={
 $0(){var s,r=this.a.c
@@ -72950,7 +72950,7 @@ A.agA.prototype={
 $0(){var s,r=this.b
 if(r!==-1){s=this.a.c
 s.toString
-A.ape(s,A.Hu(new A.agz(r),null,t.z))}else B.lh.CI(window,"/assets/PYRAWhitepaper.pdf","text")},
+A.ape(s,A.Hu(new A.agz(r),null,t.z))}else B.lh.CI(window,"/assets/assets/PYRAWhitepaper.pdf","text")},
 $S:0}
 A.agz.prototype={
 $1(a){return new A.lu(this.a,null)},
