@@ -31,7 +31,7 @@ class _UniswapIFrameState extends State<UniswapIFrame> {
     final IFrameElement _iframeElement = IFrameElement();
     _iframeElement.width = '800';
     _iframeElement.height = '600';
-    _iframeElement.src = 'https://app.uniswap.org/swap?outputCurrency=$contractAddress';
+    _iframeElement.src = 'https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=$contractAddress';
     _iframeElement.style.border = 'none';
     ui.platformViewRegistry.registerViewFactory(
       'iframeElement',

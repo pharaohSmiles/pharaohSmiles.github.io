@@ -95,4 +95,4 @@ dialogHeading(title, context) => Padding(
       ),
     );
 
-openWhitePaper() => html.window.open("/assets/PYRAWhitepaper.pdf", "text");
+openWhitePaper() => html.window.open("/assets/assets/PYRAWhitepaper.pdf", "text");

@@ -46,7 +46,7 @@ class HomeSection extends StatelessWidget {
                   InkWell(
                     onTap: () async {
                       String url =
-                          "https://app.uniswap.org/swap?outputCurrency=$contractAddress";
+                          "https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=$contractAddress";
                       if (!await launchUrl(Uri.parse(url))) {
                         throw Exception('Could not launch $url');
                       }

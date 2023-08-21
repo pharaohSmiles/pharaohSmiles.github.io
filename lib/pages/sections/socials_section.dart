@@ -22,25 +22,21 @@ class SocialsSection extends StatelessWidget {
             const SizedBox(
               height: 15,
             ),
-            Column(
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    _socialButton("s1", "https://discord.gg/SgH7cTaz"),
-                    _socialButton("s2", "https://t.me/+R1ogF8C4bvM1NTY1"),
-                    _socialButton("s3", "https://twitter.com/PYRAToken"),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    _socialButton(
-                        "s4", "https://etherscan.io/token/$contractAddress"),
-                    _socialButton("s5",
-                        "https://app.uniswap.org/swap?outputCurrency=$contractAddress"),
-                  ],
-                ),
+                _socialButton("s1", "https://discord.gg/SgH7cTaz"),
+                _socialButton("s2", "https://t.me/+R1ogF8C4bvM1NTY1"),
+                _socialButton("s3", "https://twitter.com/PYRAToken"),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                _socialButton(
+                    "s4", "https://etherscan.io/token/$contractAddress"),
+                _socialButton("s5",
+                    'https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=$contractAddress'),
               ],
             ),
           ],
@@ -49,7 +45,8 @@ class SocialsSection extends StatelessWidget {
     );
   }
 
-  _socialButton(String img, String url) => InkWell(
+  _socialButton(String img, String url) =>
+      InkWell(
         onTap: () async {
           if (!await launchUrl(Uri.parse(url))) {
             throw Exception('Could not launch $url');
