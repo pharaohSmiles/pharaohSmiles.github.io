@@ -24,7 +24,7 @@ const RESOURCES = {
 "assets/assets/images/s3.png": "446961c62bbc01d700439f4b6e78b2d6",
 "assets/assets/images/s4.png": "d970901de008f0e963f41304a5016b84",
 "assets/assets/images/s5.png": "2eb6b615f70e22d4e6aad351f69d2bc8",
-"assets/assets/PYRAWhitepaper.pdf": "f2be0f358ca0cc79ac94e08bf0c124f3",
+"assets/assets/PYRAWhitepaper.pdf": "a7e3c153c196fd2ecc8328febaec395b",
 "assets/FontManifest.json": "5504c4e38aba3935ae8c644d8dd735ab",
 "assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
 "assets/NOTICES": "d769b9c52304e92123667e6dbca0f9b3",
@@ -59,9 +59,9 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "06b9056d0febda63c5c4d81020243a30",
-"/": "06b9056d0febda63c5c4d81020243a30",
-"main.dart.js": "d8c6952e4fe6efc36155eeac7a3a5672",
+"index.html": "b8fdbaaf36ae3842807ddf4d8d565345",
+"/": "b8fdbaaf36ae3842807ddf4d8d565345",
+"main.dart.js": "4a5a9160fbb2098d897ac12b9d9f7963",
 "manifest.json": "2aca71d1f6c28f7db73a7c34d270b2c4",
 "version.json": "f90ad3952987a19411f1395ffb57668f"
 };
