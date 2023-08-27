@@ -26,7 +26,7 @@ class SocialsSection extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 _socialButton("s1", "https://discord.gg/SgH7cTaz"),
-                _socialButton("s2", "https://t.me/+R1ogF8C4bvM1NTY1"),
+                _socialButton("s2", "https://t.me/+CMnaeBc5fjU5ODNl"),
                 _socialButton("s3", "https://twitter.com/PYRAToken"),
               ],
             ),

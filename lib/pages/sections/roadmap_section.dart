@@ -17,6 +17,7 @@ class RoadmapSection extends StatefulWidget {
 
 class _RoadmapSectionState extends State<RoadmapSection> {
   double percentDone = 0;
+  int tvlTillNow = 0;
 
   @override
   void initState() {
@@ -57,11 +58,11 @@ class _RoadmapSectionState extends State<RoadmapSection> {
             yellowCardWithDetails(
               "p2",
               "Phase 2: Liquidity Target",
-              """• Our target is to reach at least \$40M TVL(total value locked) on Uniswap
-• LP tokens will be locked till a particular date decided by the community. You can also provide liquidity and enjoy rewards! Join the discord server to learn more
+              """• Our target is to reach at least \$20M TVL(total value locked) on Uniswap
+• LP tokens will be locked till a particular date decided by the community. You can also provide liquidity and enjoy rewards! Join our socials to learn more
 • You can track the target progress here. The values are updated daily.""",
               context,
-              bar: progressBar(percentDone, context),
+              bar: progressBar(context),
             ),
             yellowCardWithDetails(
                 "p3",
@@ -76,7 +77,7 @@ class _RoadmapSectionState extends State<RoadmapSection> {
     );
   }
 
-  progressBar(double percentDone, BuildContext context) => Padding(
+  progressBar(BuildContext context) => Padding(
         padding: const EdgeInsets.only(top: 20.0, bottom: 4),
         child: LinearPercentIndicator(
           lineHeight: 30,
@@ -84,9 +85,9 @@ class _RoadmapSectionState extends State<RoadmapSection> {
           animation: true,
           animationDuration: 2000,
           leading: Text('\$0'),
-          trailing: Text('\$40M'),
+          trailing: Text('\$20M'),
           center: Text(
-            "${percentDone * 100}% = \$${(percentDone * 40).toStringAsFixed(2)}M locked",
+            "${percentDone * 100}% = \$$tvlTillNow locked",
           ),
           backgroundColor: Theme.of(context).backgroundColor.withOpacity(0.7),
           progressColor: Theme.of(context).primaryColor,
@@ -98,8 +99,8 @@ class _RoadmapSectionState extends State<RoadmapSection> {
       var response = await http.get(Uri.parse(tvlEndpoint));
       print('Response body: ${response.body}');
       if (response.statusCode == 200) {
-        int tvl = jsonDecode(response.body)["TVL"];
-        String percent = (tvl / 40000000).toStringAsFixed(4);
+        tvlTillNow = jsonDecode(response.body)["TVL"];
+        String percent = (tvlTillNow / 20000000).toStringAsFixed(4);
         percentDone = double.parse(percent);
         setState(() {});
       }

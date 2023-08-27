@@ -23,7 +23,7 @@ class HowToBuySection extends StatelessWidget {
             yellowCardWithDetails(
                 "l1",
                 "CREATE A WALLET",
-                """Install metamask or any other crypto wallet that you prefer. You can find them for free on the app store or google play store if you are using a mobile device. If you are using a desktop, you can get the google chrome extension from metamask.io""",
+                """Install metamask or any other crypto wallet that you prefer. You can find them for free on the app store or google play store if you are using a mobile device. If you are using a desktop, you can get the google chrome extension from metamask.io.""",
                 context),
             yellowCardWithDetails(
               "l2",

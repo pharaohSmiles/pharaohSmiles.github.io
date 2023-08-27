@@ -1,4 +1,4 @@
-const String contractAddress = "0xeCb1a328e0807A5D885093fEc1a5777eDA43B8DB";
+const String contractAddress = "0xc1eA5840342B0b589430fA7605043064904f0676";
 const String tvlEndpoint = "https://api.npoint.io/7b79f9a83756e6405c60";
 BigInt tenToEighteenZeroes = BigInt.from(1000000000000000000);
 
@@ -133,6 +133,19 @@ const erc20Abi = """[
 				"type": "bool"
 			}
 		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "increaseLiquidity",
+		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
 	},
@@ -363,19 +376,6 @@ const erc20Abi = """[
 	{
 		"inputs": [
 			{
-				"internalType": "uint256",
-				"name": "_amount",
-				"type": "uint256"
-			}
-		],
-		"name": "withdrawPartial",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
 				"internalType": "address",
 				"name": "owner",
 				"type": "address"
@@ -406,19 +406,6 @@ const erc20Abi = """[
 			}
 		],
 		"name": "balanceOf",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "cap",
 		"outputs": [
 			{
 				"internalType": "uint256",
