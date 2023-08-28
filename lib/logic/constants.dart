@@ -1,4 +1,4 @@
-const String contractAddress = "0xc1eA5840342B0b589430fA7605043064904f0676";
+const String contractAddress = "0xbc69f076C1Aa182Ac053B520e943Fe6721565fb0";
 const String tvlEndpoint = "https://api.npoint.io/7b79f9a83756e6405c60";
 BigInt tenToEighteenZeroes = BigInt.from(1000000000000000000);
 
